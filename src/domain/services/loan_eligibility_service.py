@@ -1,7 +1,8 @@
 from src.domain.entities.loan_applicant import LoanApplicant
+from src.domain.services.loan_eligibility_interface import ILoanEligibilityService
 
 
-class LoanEligibilityService:
+class LoanEligibilityService(ILoanEligibilityService):
 
     @staticmethod
     def is_eligible(loan_applicant: LoanApplicant) -> bool:
