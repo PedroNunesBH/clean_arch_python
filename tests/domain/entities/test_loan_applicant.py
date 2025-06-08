@@ -1,6 +1,6 @@
 import pytest
 
-from domain.entities.loan_applicant import LoanApplicant
+from src.domain.entities.loan_applicant import LoanApplicant
 
 
 def test_loan_applicant_creation_success():
