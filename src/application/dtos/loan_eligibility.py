@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class LoanApplicationRequest:
+class LoanApplicationRequest(BaseModel):
     id: int
     name: str
     age: int
@@ -10,7 +9,6 @@ class LoanApplicationRequest:
     score: float
 
 
-@dataclass
-class LoanApplicationResponse:
+class LoanApplicationResponse(BaseModel):
     is_eligible: bool
     maximum_value: float
